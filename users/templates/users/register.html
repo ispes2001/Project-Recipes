@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static '/css/style.css' %}">
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 "> Register using your email address:</div>
+        </div>
+        <div class="col-md-6">
+            <input type="email" placeholder="Email*" name="email" data-display-name="" tabindex="1" <span
+                class="gigya-error-msg" data-bound-to="email" role="alert"></span>
+        </div>
+        <div class="col-md-6">
+            <input type="text" placeholder="First Name*" name="profile.firstName" data-display-name="" <span
+                class="gigya-error-msg" data-bound-to="profile.firstName" role="alert"></span>
+        </div>
+        <div class="col-md-6">
+            <input type="text" class="gigya-input-text" placeholder="Last Name*" name="profile.lastName" <span
+                class="gigya-error-msg" data-bound-to="profile.lastName" role="alert"></span>
+        </div>
+        <div class="col-md-6">
+            <input type="password" name="password" placeholder="Password*" data-display-name="" tabindex="4" <span
+                class="gigya-error-msg" data-bound-to="password" role="alert"></span>
+        </div>
+        <div class="col-md-6">
+            <input type="password" placeholder="Retype Password*" name="passwordRetype" tabindex="5" <span
+                class="gigya-error-msg" data-bound-to="passwordRetype" role="alert"></span>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class=copyright <h4> Copyright Dipesh Thapa 2020 </h4>
+        </div>
+    </footer>
+</body>
+
+</html>
