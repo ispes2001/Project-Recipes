@@ -6,22 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+    <link rel="icon" href="{% static 'ProjectR/images/favicon.ico' %}">
 
     <title>Signin Template for Bootstrap</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
 
     <!-- Bootstrap core CSS -->
-    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
-    <!--<img src="{% static "my_app/example.jpg" %}" alt="My image"> -->
+    <link href="{% static 'ProjectR/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/signin.css'%}" rel="stylesheet">
+    <link href="{% static 'ProjectR/css/signin.css'%}" rel="stylesheet" type="text/css">
   </head>
 
   <body class="text-center">
     <form class="form-signin">
-      <img class="mb-4" src="https://getbootstrap.com/docs/4.0/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <img class="mb-4 " src="{%static 'ProjectR/image/Advance.JPG' %}">
       <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
       <label for="inputEmail" class="sr-only">Email address</label>
       <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
