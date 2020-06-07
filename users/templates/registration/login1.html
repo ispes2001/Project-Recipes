@@ -1,15 +1,24 @@
 {% load static %}
 {% load widget_tweaks %}
-{% block login %}
-  {% if form.errors %}
-    <p>
-      Your username and password didn't match.
-      Please try again.
-    </p>
-  {% else %}
-    <p>Please, use the following form to log-in:</p>
-  {% endif %}
-<class="text-center">
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="{% static 'ProjectR/images/favicon.ico' %}">
+
+  <title>Signin Template for Bootstrap</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="{% static 'ProjectR/css/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template -->
+  <link href="{% static 'ProjectR/css/signin.css'%}" rel="stylesheet" type="text/css">
+</head>
+
+<body class="text-center">
   <form class="form-signin" method="post">
     <img class="mb-4 " src="{%static 'ProjectR/image/Advance.JPG' %}">
       <label for="inputEmail" class="sr-only">Username</label>
@@ -24,9 +33,8 @@
         </label>
       </div>
       <button class="btn btn-lg btn-primary btn-block form-control" type="submit">Sign in</button>
+      <p class="mt-5 mb-3 text-muted">&copy; 2020 Dipesh Thapa</p>
     </form>
-    <p><a href="{% url "password_reset" %}">Forgotten your password?</a></p>
+</body>
 
-    <p class="mt-5 mb-3 text-muted">&copy; 2020 Dipesh Thapa</p>
-
-    {% endblock login %}
+</html>
